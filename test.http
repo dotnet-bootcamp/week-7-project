@@ -1,0 +1,91 @@
+GET https://localhost:5001/api/Todo HTTP/1.1
+Content-Type: application/json
+
+###
+
+POST https://localhost:5001/api/Todo HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "First todo",
+    "isComplete": false
+}
+
+###
+
+GET https://localhost:5001/api/Todo HTTP/1.1
+Content-Type: application/json
+
+###
+
+GET https://localhost:5001/api/Todo/1 HTTP/1.1
+Content-Type: application/json
+
+###
+
+POST https://localhost:5001/api/Todo HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Second todo",
+    "isComplete": false
+}
+
+###
+
+POST https://localhost:5001/api/Todo HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Another todo",
+    "isComplete": false
+}
+
+###
+
+GET https://localhost:5001/api/Todo HTTP/1.1
+Content-Type: application/json
+
+###
+
+PUT https://localhost:5001/api/Todo/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 3,
+    "name": "Third todo",
+    "isComplete": false
+}
+
+###
+
+GET https://localhost:5001/api/Todo HTTP/1.1
+Content-Type: application/json
+
+###
+
+PUT https://localhost:5001/api/Todo/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "First todo",
+    "isComplete": true
+}
+
+###
+
+GET https://localhost:5001/api/Todo HTTP/1.1
+Content-Type: application/json
+
+###
+
+DELETE https://localhost:5001/api/Todo/3 HTTP/1.1
+Content-Type: application/json
+
+###
+
+GET https://localhost:5001/api/Todo HTTP/1.1
+Content-Type: application/json
+
+###
